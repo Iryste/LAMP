@@ -32,3 +32,11 @@ services:
       - PMA_HOST: mariadb
     depends_on:
       - mariadb
+
+  # le volume nommé
+volumes:
+  basededonnee_jb
+
+networks:
+  default:
+    LAMP
