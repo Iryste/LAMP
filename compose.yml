@@ -4,6 +4,8 @@ services:
   # PHP service
   php:
     build: "./docker_php"
+    # environment:
+      # - name=value
     volumes:
       - ./app:/var/www/html
   # le serveur
