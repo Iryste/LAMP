@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  # PHP service
+  php:
+    build: "./docker_php"
+    volumes:
+      - ./app:/var/www/html
+  # le serveur
+  apache:
+    build: "./docker_apache"
+    depends_on:
+      - php
+    ports:
+      - "8000:80"
+    volumes:
+      - ./app:/var/www/html
+
+  # services pour la base de données
+  mariadb:
+    image: mariadb:11.5
+    environment:
+      - MYSQL_ROOT_PASSWORD=12345
+    volumes:
+      - basededonnee_jb:/var/lib/mysql
+  # Graphique BDD
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - "8001:80"
+    environment:
+      - PMA_HOST: mariadb
+    depends_on:
+      - mariadb
