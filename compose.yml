@@ -20,7 +20,7 @@ services:
 
   # services pour la base de données
   mariadb:
-    image: mariadb:11.5
+    image: mariadb:latest
     environment:
       - MYSQL_ROOT_PASSWORD=12345
     volumes:
@@ -31,14 +31,14 @@ services:
     ports:
       - "8001:80"
     environment:
-      - PMA_HOST: mariadb
+      - PMA_HOST=mariadb
     depends_on:
       - mariadb
 
-  # le volume nommé
+# le volume nommé
 volumes:
-  basededonnee_jb
+  basededonnee_jb:
 
 networks:
-  default:
-    LAMP
+  default: 
+  lamp:

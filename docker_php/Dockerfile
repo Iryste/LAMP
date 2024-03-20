@@ -8,4 +8,4 @@ RUN apt update \
 RUN docker-php-ext-install mysqli pdo pdo_mysql gd zip intl xml
 
 # nettoyage du cache
-RUN apt-clean
+RUN apt clean
