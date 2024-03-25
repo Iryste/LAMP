@@ -13,15 +13,19 @@
 <!-- Contenu visible -->
     <header>
         <nav>
-            <div>Bonjurno</div>
-            navigation
+            <div id="logo">LOGO</div>
+            <ul>
+                <li><a href="/">accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#projets">Mes projets</a></li>
+            </ul>
         </nav>
     </header>
 
 <main>
-    <section class="section" id="section">section 1</section>
-    <section class="section">section 2</section>
-    <section class="section">section 3</section>
+    <section id="accueil">accueil</section>
+    <section id="a-propos">À propos</section>
+    <section id="projets">Mes projets</section>
 </main>
 
 
