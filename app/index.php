@@ -13,24 +13,25 @@
 <!-- Contenu visible -->
     <header>
         <nav>
-            <div id="logo">LOGO</div>
-            <div id="hamburger"> 
-                <span></span>
-                <span></span>
-                <span></span>
+            <div id="logo">SiteJB</div>
+            <div id="hamburger">
+                <span></span><span></span><span></span>
             </div>
             <ul>
                 <li><a href="/">accueil</a></li>
                 <li><a href="#a-propos">À propos</a></li>
                 <li><a href="#projets">Mes projets</a></li>
+                <li><a href="#contact.php">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
 <main>
+<!-- <img src="./image.jpg" alt> -->
     <section id="accueil">accueil</section>
     <section id="a-propos">À propos</section>
     <section id="projets">Mes projets</section>
+    <section id=contact.php>Contacts</section>
 </main>
 
 
