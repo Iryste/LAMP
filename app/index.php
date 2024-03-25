@@ -14,6 +14,11 @@
     <header>
         <nav>
             <div id="logo">LOGO</div>
+            <div id="hamburger"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href="/">accueil</a></li>
                 <li><a href="#a-propos">À propos</a></li>

@@ -9,6 +9,25 @@
 color: green;
 }
 
+#hamburger {
+    display: flex;
+    width: 40px;
+    flex-direction: column;
+}
+
+#hamburger span {
+    height: 4px;
+    background: black;
+    width: 100%;
+
+}
+
+#hamburger span:nth-child(2) {
+    /* dans l'ordre haut droite bas gauche */
+margin: 4px 0 4px 0;
+
+}
+
 
 main section {
     height: 1000px;
