@@ -27,11 +27,13 @@
     </header>
 
 <main>
-<!-- <img src="./image.jpg" alt> -->
-    <section id="accueil">accueil</section>
-    <section id="a-propos">À propos</section>
-    <section id="projets">Mes projets</section>
-    <section id=contact.php>Contacts</section>
+
+
+<div></div>
+<div></div>
+<div></div>
+
+
 </main>
 
 

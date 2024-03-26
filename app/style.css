@@ -29,11 +29,23 @@ img {
 }
 
 main {
-    background: url(./image.jpg);
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: url(./image.jpg);
     height: 800px;
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+} 
+
+main div {
+    min-width: 250px;
+    height: 300px;
+    max-width: 300px;
+    border: 2px solid green;
+    border-radius: 8px;
 }
 
 #logo {
@@ -73,7 +85,6 @@ margin: 4px 0 4px 0;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background: gray;
         scroll-behavior: smooth;
     }
     #logo {
